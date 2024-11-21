@@ -36,6 +36,4 @@ public class Hooks {
             DriverFactory.context.tracing().stop(new Tracing.StopOptions().setPath(Paths.get("target/" + screenshotName + ".zip")));
         }
     }
-
-
 }

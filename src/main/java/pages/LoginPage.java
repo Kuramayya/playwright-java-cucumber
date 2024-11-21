@@ -10,6 +10,7 @@ public class LoginPage {
     private final Locator PASSWORD_EDITBOX;
     private final Locator LOGIN_BUTTON;
     private final Locator BOOKS_SEARCH_BOX;
+    private final Locator NEWUSER_BUTTON;
 
     public LoginPage(Page page) {
         this.page = page;
@@ -17,6 +18,7 @@ public class LoginPage {
         this.PASSWORD_EDITBOX = page.locator("#password");
         this.LOGIN_BUTTON = page.locator("#login");
         this.BOOKS_SEARCH_BOX = page.getByPlaceholder("Type to search");
+        this.NEWUSER_BUTTON = page.locator("#newUser");
     }
 
     public void navigateToUrl(String url) {
@@ -33,6 +35,9 @@ public class LoginPage {
 
     public void clickLogin() {
         LOGIN_BUTTON.click();
+    }
+    public void clickNewUser() {
+    	NEWUSER_BUTTON.click();
     }
 
     public void clickOnIcon(String iconName) {

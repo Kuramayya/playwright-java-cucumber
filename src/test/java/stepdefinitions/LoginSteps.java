@@ -30,6 +30,7 @@ public class LoginSteps {
     public void clickLogin() {
         loginPage.clickLogin();
     }
+    
 
     @When("^user clicks on \"([^\"]*)\" icon in main page")
     public void clickOnIcon(String iconName) {
