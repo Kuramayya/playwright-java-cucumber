@@ -1,6 +1,6 @@
 Feature: Verify Widgets Page
 
-  @smoke
+  @smoke1
   Scenario: Verify User is interact with Widgets
     Given user navigates to "url"
     When user clicks on "Widgets" icon in main page

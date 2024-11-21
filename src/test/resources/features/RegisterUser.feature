@@ -1,4 +1,4 @@
-Feature: Login Page feature
+Feature: Register Page feature
     
   @register @smoke
   Scenario: Verify User is able to register to Book Store application
