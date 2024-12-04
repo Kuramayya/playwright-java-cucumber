@@ -1,6 +1,6 @@
 Feature: Register Page feature
     
-  @register @smoke1
+  @register @smoke
   Scenario: Verify User is able to register to Book Store application
     Given user navigates to "url"
     When user clicks on "Book Store Application" icon in main page

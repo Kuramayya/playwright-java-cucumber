@@ -1,6 +1,6 @@
 Feature: Verify Alerts, Frame & Windows Page
 
-  @smoke1
+  @smoke
   Scenario: Verify User is able to handle pop up windows, frames and alerts
     Given user navigates to "url"
     When user clicks on "Alerts, Frame & Windows" icon in main page
