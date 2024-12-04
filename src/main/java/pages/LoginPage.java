@@ -3,6 +3,7 @@ package pages;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import utils.WebActions;
+import com.microsoft.playwright.*;
 
 public class LoginPage {
     private Page page;
@@ -23,6 +24,12 @@ public class LoginPage {
 
     public void navigateToUrl(String url) {
         this.page.navigate(WebActions.getProperty(url));
+        try {
+			Thread.sleep(60000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
     public void enterUsername(String username) {
