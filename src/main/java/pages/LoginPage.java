@@ -25,7 +25,7 @@ public class LoginPage {
     public void navigateToUrl(String url) {
         this.page.navigate(WebActions.getProperty(url));
         try {
-			Thread.sleep(60000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
